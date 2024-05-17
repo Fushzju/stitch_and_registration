@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 from glob import globa
 import torch
+import argparse
 
 from sg.matching import Matching
 from sg.utils import frame2tensor
@@ -13,20 +14,14 @@ from loftr.utils.plotting import make_matching_plot_color_Loftr
 from sklearn.metrics.cluster import mutual_info_score
 import matplotlib.cm as cm
 
-import argparse
 
 torch.set_grad_enabled(False)
 cv2.ocl.setUseOpenCL(False)
 
 W = 640
 H = 480
-<<<<<<< HEAD
-print(111)
 
-=======
 
-print(222)
->>>>>>> feature2
 def cv_imread(file_path):
     cv_img = cv2.imdecode(np.fromfile(file_path, dtype=np.uint8), -1)
     return cv_img
