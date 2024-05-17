@@ -20,8 +20,13 @@ cv2.ocl.setUseOpenCL(False)
 
 W = 640
 H = 480
+<<<<<<< HEAD
 print(111)
 
+=======
+
+print(222)
+>>>>>>> feature2
 def cv_imread(file_path):
     cv_img = cv2.imdecode(np.fromfile(file_path, dtype=np.uint8), -1)
     return cv_img
