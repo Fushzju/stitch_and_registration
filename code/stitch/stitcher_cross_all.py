@@ -2,7 +2,7 @@ import os.path as osp
 import os
 import cv2
 import numpy as np
-from glob import glob
+from glob import globa
 import torch
 
 from sg.matching import Matching
@@ -20,7 +20,7 @@ cv2.ocl.setUseOpenCL(False)
 
 W = 640
 H = 480
-
+print(111)
 
 def cv_imread(file_path):
     cv_img = cv2.imdecode(np.fromfile(file_path, dtype=np.uint8), -1)
