@@ -1,5 +1,4 @@
 import os.path as osp
-
 import cv2
 import numpy as np
 import os
@@ -16,13 +15,12 @@ import matplotlib.cm as cm
 from glob import glob
 from scipy.stats import entropy, pearsonr
 
+
 torch.set_grad_enabled(False)
 W = 640
 H = 480
 cv2.ocl.setUseOpenCL(False)
-# 打开文件方式1：
 
-# 方式2：
 
 def cv_imread(file_path):
     """可读取图片（路径为中文）
