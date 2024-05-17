@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 from glob import globa
 import torch
+import argparse
 
 from sg.matching import Matching
 from sg.utils import frame2tensor
@@ -13,7 +14,6 @@ from loftr.utils.plotting import make_matching_plot_color_Loftr
 from sklearn.metrics.cluster import mutual_info_score
 import matplotlib.cm as cm
 
-import argparse
 
 torch.set_grad_enabled(False)
 cv2.ocl.setUseOpenCL(False)
